@@ -12,7 +12,7 @@ db = mysql.connector.connect(
 icao_code = input("Enter the ICAO code of an airport: ")
 
 cursor = db.cursor()
-cursor.execute("lol", (icao_code.upper(),))
+cursor.execute("", (icao_code.upper(),))
 result = cursor.fetchall()
 
 if not result:
